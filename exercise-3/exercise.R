@@ -1,7 +1,7 @@
 # Exercise 3: Vector and function practice
 
 # Create a vector `marbles` with 6 colors (representing marbles).
-
+marbles <- c('blue', 'green', 'yellow', 'red', 'pink', 'black')
 
 # Use the `sample()` function to randomly select a single marble
 
