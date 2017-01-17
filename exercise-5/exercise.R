@@ -2,7 +2,7 @@
 
 # Create a vector `words` of 6 (or more) words.
 # You can Google for a "random word generator" if you wish!
-words <- c("a","black","book","is","a","scary","read")
+words <- c("a","black","book","is","not","scary","read")
 
 # Create a new vector `words.of.the.day` that is your `words` vector with the string
 # "is the word of the day!" pasted on to the end.
