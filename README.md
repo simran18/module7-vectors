@@ -157,7 +157,8 @@ The reason this sensible behavior occurs is because, in truth, **everything in R
 
 ```r
 # Create a vector of length 1 in a variable x
-x <- 7  # equiavlent to `x <- c(7)`
+x <- 7  # equivalent to `x <- c(7)`
+
 # Print out x: R states the vector index (1) in the console
 print(x)  # [1] 7
 ```
@@ -203,7 +204,7 @@ print(whole.nums)  # [1]  4.0  8.0 10.8  3.3  5.2
 
 This vectorization process is ___extremely powerful__, and is a significant factor in what makes R an efficient language for working with large data sets (particularly in comparison to languages that require explicit iteration through elements in a collection). Thus to write really effective R code, you'll need to be comfortable applying functions to vectors of data, and getting vectors of data back as results.
 
-- Just remember: _when you use a function on a vector, you're using that function **on each item* in the vector_!
+- Just remember: _when you use a function on a vector, you're using that function **on each item** in the vector_!
 
 
 ## Vector Indices
@@ -229,7 +230,7 @@ name.first <- names[1]
 print(name.first)  # [1] "Sarah"
 
 # access the elemnt at index 2
-name.second <- names[2]  #
+name.second <- names[2]
 print(name.second)  # [1] "Amit"
 
 # You can also use variables inside the brackets
@@ -320,7 +321,7 @@ shoe.is.big <- shoe.sizes > 6.5  # T, F, F, T, T
 big.shoes <- shoe.sizes[shoe.is.big]  # returns 7, 11, 8
 ```
 
-THe magic here is that we are once again using _recycling_: the relational operator `>` is _vectorized_, meaning that the shorter vector (the `6.5`) is recycled and applied to each element in the `shoe.sizes` vector, thus producing the boolean vector that we want!
+The magic here is that we are once again using _recycling_: the relational operator `>` is _vectorized_, meaning that the shorter vector (the `6.5`) is recycled and applied to each element in the `shoe.sizes` vector, thus producing the boolean vector that we want!
 
 We can even combine the second and third lines of code into a single statement. You can think of the following statement as saying _shoe.sizes **where** shoe.sizes is greater than 6.5_:
 
