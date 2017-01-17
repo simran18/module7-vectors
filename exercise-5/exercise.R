@@ -24,7 +24,7 @@ g.m.words
 # Define a function `WordBin` that takes in three arguments: a vector of words, and two letters. The function
 # should return a vector of words that go between those letters alphabetically.
 WordBin <- function(words, start, end){
-  return(words[word >= start & substring(words,1,1) <= end])
+  return(words[words >= start & substring(words,1,1) <= end])
 }
 
 # Use your `WordBin` function to determine which of your words start with "e" through "q"
